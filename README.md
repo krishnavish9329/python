@@ -1,6 +1,6 @@
-**welcom to Python course 
+# welcom to Python course 
 
-Index
+# Index
 1) Introduction of Python
 2) Veriables And Datatype
 3) String 
