@@ -59,3 +59,33 @@ modules,comments & pip commamnd?
 
 # Veriables And Datatype
 
+First of all we undertand <i><b>print("Hello World")</b></i>     you can run program at chapter1/firth_program.py <br>
+This function outputs the supplied message or a value to the console.
+<br>
+<br>
+
+<b>Python Character Set</b>
+<b>Letters</b> A to Z, a to z
+<b>Digits</b>  0 to 9
+<b>Special Symbols</b> -/*-+
+<b>Whitespaces</b> Blank Space, Tab, carriage return, newLine, formfeed
+<b>Other character</b> Python can process all ASCLL and Unicode characters as pert of data pr literals
+
+<b>Veriable</b>
+A Veriable is a name give to a memory location in a Program<br>
+<b>
+name = "username"
+age = 32
+price = 23.33
+</b>
+
+<b>type()</b>
+Python type() is a built-in function that returns the type of the objects/data elements stored in any data type or returns a new type object depending on the arguments passed to the function.<br>
+
+<b>identifiers</b>
+An identifier is a name given to a variable, function, class, module, or other object in a program.<br>
+<b>keyword</b>
+keyword is a word that serves a specific function in Python. OR REserved Words Also knows as Keyword<br>
+
+<b>Datatype</b>
+<i>37:41</i>
