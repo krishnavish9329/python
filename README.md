@@ -65,11 +65,11 @@ This function outputs the supplied message or a value to the console.
 <br>
 
 <b>Python Character Set</b>
-<b>Letters</b> A to Z, a to z
-<b>Digits</b>  0 to 9
-<b>Special Symbols</b> -/*-+
-<b>Whitespaces</b> Blank Space, Tab, carriage return, newLine, formfeed
-<b>Other character</b> Python can process all ASCLL and Unicode characters as pert of data pr literals
+<b>Letters</b> A to Z, a to z <br>
+<b>Digits</b>  0 to 9<br>
+<b>Special Symbols</b> -/*-+<br>
+<b>Whitespaces</b> Blank Space, Tab, carriage return, newLine, formfeed<br>
+<b>Other character</b> Python can process all ASCLL and Unicode characters as pert of data pr literals<br>
 
 <b>Veriable</b>
 A Veriable is a name give to a memory location in a Program<br>
@@ -78,14 +78,73 @@ name = "username"
 age = 32
 price = 23.33
 </b>
+<hr>
+
 
 <b>type()</b>
 Python type() is a built-in function that returns the type of the objects/data elements stored in any data type or returns a new type object depending on the arguments passed to the function.<br>
+<hr>
 
 <b>identifiers</b>
 An identifier is a name given to a variable, function, class, module, or other object in a program.<br>
 <b>keyword</b>
 keyword is a word that serves a specific function in Python. OR REserved Words Also knows as Keyword<br>
+<hr>
 
-<b>Datatype</b>
-<i>37:41</i>
+<b>Datatype</b><br>
+<i>Primary datatype</i>
+Integers<br>
+String<br>
+Float<br>
+Boolean<br>
+None<br>
+<hr>
+
+<b>Solve one Problem <i>Sum of 2 number</i> </b> <a herf="chapter 1/firsth_program.py">link</a>
+
+<b>Type Of Tokens</b><br>
+Punctuators<br>
+Punctuators are symbols to organize sentence structure in programming<br>
+(),{},[],@,#,-=,+=,*=,/=,==,=,+,-,*,/ etc<br>
+<hr>
+
+# String 
+<i>Strings are used for representing textual data. A string is a sequence of characters enclosed in either single quotes ('') or double quotes (“”). The Python language provides various built-in methods and functionalities to work with strings efficiently.</i><br>
+
+name1="ab"<br>
+name='sb'<br>
+name3='''all peragaph'''<br>
+
+<b><i>Expression Execution</i></b>
+A,B =2,3<br>
+txt="@"<br>
+print(2*txt*3)<br>
+
+<b>Output</b><br>
+@@@@@@<br>
+
+A,B ="2",3<br>
+Txt="@"<br>
+print((A+Txt)*B)<br>
+<b>Output</b><br>
+2@2@2@<br>
+<hr>
+
+<b>Comment</b><br>
+there are 2 type of Comment<br>
+<i># single line comment</i><br>
+<i>"""single line comment""" </i><br>
+<hr>
+
+<b>input IN python</b><br>
+
+<i>input() statement is used to accet value (using Keyboard) form user</i><br>
+input always take String input so we must convert int for int value<br>
+
+<i>name= input("name: ")</i><br>
+<i>age= int(input("age: "))</i><br>
+
+<hr>
+
+# condtion Statements
+
