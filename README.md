@@ -58,6 +58,7 @@ modules,comments & pip commamnd?
 
 
 # Veriables And Datatype
+## chapter 1
 
 First of all we undertand <i><b>print("Hello World")</b></i>     you can run program at chapter1/firth_program.py <br>
 This function outputs the supplied message or a value to the console.
@@ -109,13 +110,14 @@ Punctuators are symbols to organize sentence structure in programming<br>
 <hr>
 
 # String 
+## chapter 2
 <i>Strings are used for representing textual data. A string is a sequence of characters enclosed in either single quotes ('') or double quotes (“”). The Python language provides various built-in methods and functionalities to work with strings efficiently.</i><br>
 
 name1="ab"<br>
 name='sb'<br>
 name3='''all peragaph'''<br>
 
-<b><i>Expression Execution</i></b>
+<b><i>Expression Execution</i></b><br>
 A,B =2,3<br>
 txt="@"<br>
 print(2*txt*3)<br>
@@ -147,4 +149,31 @@ input always take String input so we must convert int for int value<br>
 <hr>
 
 # condtion Statements
+
+## chapter 6
+
+if-elif-else(SYNTAX)<br>
+if else and elif statement are thr multway decision taken by our program dur yo certaint condtions in out cord<br>
+
+if(condition):<br>
+    Statement1<br>
+elif(condition):<br>
+    Statement2<br>
+else:<br>
+    StatementN<br>  
+
+and<br>
+<b>single Line if / Ternary Operator</b><br>
+<i><var>=<val1>if<condition>else<val2></i>
+
+Example<br>
+food =input("food : ")<br>
+eat = "yes" if food == "cake" else "no"<br>
+print(eat)<br>
+
+<i><str1>=if<condition>else<str2></i>
+food = input("food: ")<br>
+print("sweet")if food=="cake" or food == "jalebi" else print("not sweet")<br>
+
+
 
