@@ -164,14 +164,14 @@ else:<br>
 
 and<br>
 <b>single Line if / Ternary Operator</b><br>
-<i><var>=<val1>if<condition>else<val2></i>
+<i> var = val1 if condition else  val2 </i>
 
 Example<br>
 food =input("food : ")<br>
 eat = "yes" if food == "cake" else "no"<br>
 print(eat)<br>
 
-<i><str1>=if<condition>else<str2></i>
+<i> str1 =if condition else str2 </i>
 food = input("food: ")<br>
 print("sweet")if food=="cake" or food == "jalebi" else print("not sweet")<br>
 
