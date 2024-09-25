@@ -175,5 +175,19 @@ print(eat)<br>
 food = input("food: ")<br>
 print("sweet")if food=="cake" or food == "jalebi" else print("not sweet")<br>
 
+<b>Clever if / Ternary Operator</b><br>
+
+<i>var = (false_val, true_val)[ condition]</i><br>
+
+example<br>
+
+age= int (intput("age:"))<br>
+vate=("yes","no")[ age>= 18]<br>
+print(vate)<br>
+<br>
+sal = float(intput("salary: "))<br>
+tax =sal*(0.1, 0.2)[sal<= 50000]<br>
+prnt(tax)
+<br>
 
 
