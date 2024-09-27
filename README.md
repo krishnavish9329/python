@@ -189,6 +189,13 @@ sal = float(intput("salary: "))<br>
 tax =sal*(0.1, 0.2)[sal<= 50000]<br>
 prnt(tax)
 <br>
+<hr>
+<b>Type Of Operatores</b><br>
+<i>An Opertor is a symbol that performs  acertain operation between operands</i><br>
+
+<b>Arithmetic Operators <b> (+, -, *, /, %, **) ** is power Operators<br>
+<b>Relational / Comparison Operators <b> (==, !=, >, <, >=, <=)<br>
+<b>Assignment Operators <b>(=, +=,-=, *=,/=, %=, **/)<br>
+<b>Logical Operators <b>(not, and, or)<br>
 
 
-<i>1:57</i>
