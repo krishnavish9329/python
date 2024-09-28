@@ -16,12 +16,16 @@
 # list2.remove(26)
 # print(list2)
 
+# list=[85,94,76,63,48]
+# print(list[::-1])
+# print(list[-5::2])
+
+
 # tuplenumber=(26,10,20,3,20)
 # print(type(tuplenumber))
 # print(tuplenumber)
 # print(tuplenumber.count(20))
 # print(tuplenumber.index(10))
 
-list=[85,94,76,63,48]
-print(list[::-1])
-print(list[-5::2])
+tup=(1,)
+print(type(tup))

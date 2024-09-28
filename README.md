@@ -279,11 +279,6 @@ list2.insert(3,5)<br>
 list2.pop()<br>
 list2.remove(26)<br>
 print(list2)<br>
-tuplenumber=(26,10,20,3,20)<br>
-print(type(tuplenumber))<br>
-print(tuplenumber)<br>
-print(tuplenumber.count(20))<br>
-print(tuplenumber.index(10))<br>
 list=[85,94,76,63,48]<br>
 <i>list can work as string</i><br>
 print(list[::-1])-->[48, 63, 76, 94, 85]<br>
@@ -301,11 +296,18 @@ list =[2,1,3]<br>
 <b>list.remove(1)</b>:- remove first occurrence of element [2, 3]<br>
 <b>list.pop(idx)</b>:- remove element at idx<br>
 
-
 ## Tuples in python
 
 <b>Tuples</b>:- A Tuples is an Immutable data type in python<br>
 A built-in datatype that lets us create immutable sequence of value<br>
 
+tuplenumber=(26,10,20,3,20)<br>
+print(type(tuplenumber))<br>
+print(tuplenumber)<br>
+<b>List method</b><br>
+print(tuplenumber.count(20))<br>
+print(tuplenumber.index(10))<br>
 
-
+<i>single element tuple</i>
+tup=(1,)<br>
+print(type(tup))<br>
