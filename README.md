@@ -197,5 +197,57 @@ prnt(tax)
 <b>Relational / Comparison Operators <b> (==, !=, >, <, >=, <=)<br>
 <b>Assignment Operators <b>(=, +=,-=, *=,/=, %=, **/)<br>
 <b>Logical Operators <b>(not, and, or)<br>
+<hr>
+<b>Type Conversion</b>
+Python defines type conversion functions to directly convert one data type to another which is useful in day-to-day and competitive programming. <br>
+There are two types of Type Conversion in Python:<br>
+
+Python Implicit Type Conversion<br>
+Python Explicit Type Conversion<br>
+
+<b>Implicit Type Conversion</b><br>
+<i>In Implicit type conversion of data types in Python, the Python interpreter automatically converts one data type to another without any user involvement.</b><br>
+a=2<br>
+b=4.25<br>
+sum=a+b<br>
+print(sum)<br>
 
 
+<b>Explicit Type Conversion in Python</b>
+<i>>In Explicit Type Conversion in Python, the data type is manually changed by the user as per their requirement. With explicit type conversion, there is a risk of data loss since we are forcing an expression to be changed in some specific data type.  </i><br>
+
+int(a, base): This function converts any data type to an integer. ‘Base’ specifies the base in which the string is if the data type is a string.<br>
+float(): This function is used to convert any data type to a floating-point number. <br>
+
+a="2"<br>
+b=4<br>
+sum=int(a)+b<br>
+print(sum)<br>
+
+a="Krishna"<br>
+b=4<br>
+sum=int(a)+b<br>
+print(sum)<br>
+<i>it give error</i><br>
+
+<hr>
+<b>String Method</b><br>
+<string>concatenation</string><br>
+"hello" + "world!" ----> "helloworld!"<br>
+<string>length(len()) of string</string><br>
+len(str) ----> length of String in number<br>
+str="i am learning python"<br>
+print(str[0])---> i<br>
+<string>str.endwith(str) </string><br>
+return true if string ends with substr<br>
+<string>str.capitalize() </string><br>
+capitalize 1st char<br>
+<string>str.replace(old,new) </string><br>
+replace all occurrences of old with new<br>
+<string>str.find(word) </string><br>
+return 1st index of 1st occurrence<br>
+<string>str.count(str) </string><br>
+count the occurrence of substr in string<br>
+<hr>
+
+# List & Tubles
