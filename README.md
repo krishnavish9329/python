@@ -251,3 +251,61 @@ count the occurrence of substr in string<br>
 <hr>
 
 # List & Tubles
+
+## chapter 4
+
+<b>List</b>:- A built-in data type that stores set of value<br>
+list can store element of differenet type(int.float,string,etc)<br>
+
+
+list2=[26,10.9,3,26102003]<br>
+print(list2)<br>
+print(type(list2))<br>
+list2.sort()<br>
+list2.reverse()<br>
+list2.append(299)<br>
+list2.insert(3,5)<br>
+list2.pop()<br>
+list2.remove(26)<br>
+
+
+list2=[26,10.9,3,26102003]<br>
+print(list2)<br>
+print(type(list2))<br>
+list2.sort()<br>
+list2.reverse()<br>
+list2.append(299)<br>
+list2.insert(3,5)<br>
+list2.pop()<br>
+list2.remove(26)<br>
+print(list2)<br>
+tuplenumber=(26,10,20,3,20)<br>
+print(type(tuplenumber))<br>
+print(tuplenumber)<br>
+print(tuplenumber.count(20))<br>
+print(tuplenumber.index(10))<br>
+list=[85,94,76,63,48]<br>
+<i>list can work as string</i><br>
+print(list[::-1])-->[48, 63, 76, 94, 85]<br>
+print(list[-5::2])-->[85, 76, 48]<br>
+
+
+<b><i>list method</i></b><br>
+list =[2,1,3]<br>
+<b>list.append(4)</b>:- adds one at the end [2,1,3,4]<br>
+<b>list.sort()</b>:- sort in ascening order [1,2,3,4]<br>
+<b>list.sort(reverse= True)</b>:- sort in deascening order [4,3,1,2]<br>
+<b>list.reverse()</b>:- reverse list [4,3,1,2]<br>
+<b>list.insert(idx,el)</b>:- insert element at index<br>
+<br>
+<b>list.remove(1)</b>:- remove first occurrence of element [2, 3]<br>
+<b>list.pop(idx)</b>:- remove element at idx<br>
+
+
+## Tuples in python
+
+<b>Tuples</b>:- A Tuples is an Immutable data type in python<br>
+A built-in datatype that lets us create immutable sequence of value<br>
+
+
+

@@ -14,10 +14,14 @@
 # list2.insert(3,5)
 # list2.pop()
 # list2.remove(26)
-# print(list21
+# print(list2)
 
-tuplenumber=(26,10,20,3)
-print(type(tuplenumber))
-print(tuplenumber)
-print(tuplenumber.count(26))
-print(tuplenumber.index(10))
+# tuplenumber=(26,10,20,3,20)
+# print(type(tuplenumber))
+# print(tuplenumber)
+# print(tuplenumber.count(20))
+# print(tuplenumber.index(10))
+
+list=[85,94,76,63,48]
+print(list[::-1])
+print(list[-5::2])
