@@ -12,13 +12,13 @@ a = {
 # for a,b in a.items():
 #     print(a,"=:",b)
 
-# #print(a.keys())
-# for p in a.keys():
-#     print(p)
+print(a.keys())
+for p in a.keys():
+    print(p)
 
 # a.update({"sng":"krishna",9:90,'ke':"EE"})
 # for a in a.keys():
 #      print(a)
 
-print(a.get("9999999"))
+# print(a.get("9999999"))
 #print(a["33"])

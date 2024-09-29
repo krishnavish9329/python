@@ -311,3 +311,78 @@ print(tuplenumber.index(10))<br>
 <i>single element tuple</i>
 tup=(1,)<br>
 print(type(tup))<br>
+
+<hr>
+
+# Dictionary & set
+
+<b>Dictionary</b>:- Dictionary is a collection of key-value pairs<br>
+they are unordered, mutable(changeable) & don't allow duplicate keys<br>
+
+a = {<br>
+"kkv" : "i'm krishna vishwakarma" ,<br>
+"san" : "my name sangam vishwakarma",<br>
+22:[2,3,0,8],<br>
+"hey":[90.3,44,77]<br>
+}<br>
+
+print(a) --->{'kkv': "i'm krishna vishwakarma", 'san': 'my name sangam vishwakarma', 22: [2, 3, 0, 8], 'hey': [90.3, 44, 77]}<br>
+print(type(a))---> < class 'dict'><br>
+print(a['kkv']) --> i'm krishna vishwakarma<br>
+
+print(a.items())-->dict_items([('kkv', "i'm krishna vishwakarma"), ('san', 'my name sangam vishwakarma'), (22, [2, 3, 0, 8]), ('hey', [90.3, 44, 77])])<br>
+
+for a,b in a.items():<br>
+    print(a,"=:",b)--->kkv =: i'm krishna vishwakarma   <br>
+                        san =: my name sangam vishwakarma<br>
+                        22 =: [2, 3, 0, 8]<br>
+                        hey =: [90.3, 44, 77]<br>
+
+print(a.keys())-->dict_keys(['kkv', 'san', 22, 'hey'])<br>
+for p in a.keys():<br>
+    print(p)-->kkv<br>
+                san<br>
+                22<br>
+                hey<br>
+<hr>
+<b>Dictionary method</b><br>
+<b>myDick.keys()</b> returns all keys<br>
+<b>myDick.values()</b> return all values<br>
+<b>myDick.items()</b> return all key value oairs as tuples <br>
+<b>myDick.get()</b> return the key according to value<br>
+<b>myDick.update(newDict)</b> insert the specified item to the dictionary<br>
+
+a.update({"sng":"krishna",9:90,'ke':"EE"})<br>
+
+# set
+<b>Set</b> :- set is the collection of the unordered items.<br>
+Each element in the set must be unique & immutable.<br>
+
+sets={22,1,2,3,1}<br>
+print(sets)<br>
+print(type(sets))<br>
+print(len(sets))<br>
+
+<i>empty Set</i>
+collection={}--> this is empty Dictionary not set<br>
+collection=set()--> this is empty set<br>
+
+<b>set method</b> 
+<b>set.add(e)</b> add an element<br>
+<b>set.remove(el)</b> remove the eleme an<br>
+<b>set.clear()</b> empties the set<br>
+<b>set.pop()</b> remove a random value<br>
+<b>set.union({})</b> return a new set will all item from both set<br>
+<b>set.intersection({})</b> return a new set whitch contain only item int both set<br>
+
+sets.remove(3)<br>
+print(sets.pop())<br>
+print(sets)<br>
+print(sets.pop())<br>
+print(sets)<br>
+print(sets.pop())<br>
+print(sets)<br>
+sets.clear()<br>
+
+print(sets.union({4,5,6,4}))<br>
+print(sets.intersection({22,2,1,9,0,9}))<br>
