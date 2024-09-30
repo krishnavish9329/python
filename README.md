@@ -386,3 +386,119 @@ sets.clear()<br>
 
 print(sets.union({4,5,6,4}))<br>
 print(sets.intersection({22,2,1,9,0,9}))<br>
+
+
+# Loops
+## chapter 7
+sometime we want to repeat a set of statements in our program for instace Print 1 to 1000<br>
+loops make it easy for a programmer to tell the computer which set of instruction to repeat and How!<br>
+
+<i>Type of loops</i><br>
+<i>while</i><br>
+<i>for</i><br>
+
+<b>while</b>:- <br>
+Syntax of while loop:-<br>
+<i>while <b>condition</b>: </i><br>
+    #body of the loop<br>
+
+
+i=0<br>
+#using while loop <br>
+while i<10:<br>
+    print ("hello  " + str(i))<br>
+    i=i+1<br>
+
+
+i=0<br>
+using while loop <br>
+while i<50:<br>
+    print (i)<br>
+    i=i+1<br>
+
+fruits=['banana','orange','mangoes','greps','papaya']<br>
+i=0<br>
+while(i<len(fruits)):<br>
+    print(fruits[i])<br>
+    i=i+1<br>
+
+i=50<br>
+using while loop (reverxe) <br>
+while i>0:<br>
+    print (i)<br>
+    i=i-1<br>
+
+<b>for</b>:- <br>
+A for loop is used to iterate throught a sequence the list tuple or string[iterables]<br>
+
+the syntax of a for loop looks like this:-<br>
+
+l=[1,7,8]<br>
+for i in l:<br>
+    print(i)<br>
+    <br>
+
+fruits=['banana','orange','mangoes','greps','papaya']<br>
+for i in fruits:<br>
+    print(i)<br>
+
+for i in range(7):<br>
+    print(i)<br>
+print(range(1,9))<br>
+
+<b>Range function</b>:- <br><i>
+the range function in python is used to generate a sequence of number.  we can also specify the state, stop and Stap_size as follows.<br></i>
+range[star,stop,steps_size]<br>
+
+<b>for with else</b>:- <br>
+<i>An optional else can be ued a for loop if the code is to be executed when the loop exhausts<br>
+</i>
+
+for i in range(10):<br>
+    print(i)<br>
+else:<br>
+    print("yes")<br>
+<br>
+<br>
+for i in range(9):<br>
+    print(i)<br>
+    if(i==3):<br>
+        break<br>
+else:<br>
+    print("hello")<br>
+    <br>
+for i in range(8):<br>
+    if(i==5):<br>
+        continue<br>
+    print(str(i))<br>
+    <br>
+i=9<br>
+if i >0:<br>
+    pass<br>
+print ("helo")<br>
+while i>0:<br>
+    pass<br>
+print(<br>
+    "he;llp"<br>
+)<br>
+
+
+<b>Breack & continue % pass</b><br>
+<i>
+break:- used to terminate the loop when encountered<br>
+continue :- terminates execution in the current iteration & continues executoin of the loop with the next iteratoin.<br>
+pass :- pass is a null statement in pythan it instructs to "do nothing"<br></i>
+
+
+for i in range(9):<br>
+    print(i)<br>
+    if(i==3):<br>
+        break<br>
+
+for i in range(8):<br>
+    if(i==5):<br>
+        continue<br>
+    print(str(i))<br>
+
+# Function & recursion
+

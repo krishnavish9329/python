@@ -26,9 +26,9 @@
 
 # for i in range(7):
 #     print(i)
-#print(range(1,9))
+# print(range(1,9))
 
-# #for with else
+#for with else
 # for i in range(10):
 #     print(i)
 # else:
@@ -40,7 +40,7 @@
 #         break
 # else:
 #     print("hello")
-#for i in range(8):
+# for i in range(8):
 #    if(i==5):
 #        continue
 #    print(str(i))
@@ -52,4 +52,4 @@
 #     pass
 # print(
 #     "he;llp"
-# )
+#  )
