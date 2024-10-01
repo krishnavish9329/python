@@ -501,4 +501,82 @@ for i in range(8):<br>
     print(str(i))<br>
 
 # Function & recursion
+## chapter 8
 
+
+<b>Function :- </b> a function is a group of statement performing a specific task.<br>
+when a program is gets bigger in size and its complexity grous, it get difficult for a programmer to keep track on which piece of code is doing what!.<br>
+
+a Functon can be recused by the programmer in a given program any number of.<br>
+
+<b>Syntax :-</b><br>
+def fun1():<br>
+    #function body<br>
+
+<br>
+def fun1(param1,param2):<br>
+    #function body<br>
+<br>
+function_name(arg1,arg2) #function call<br>
+
+<b>Function call</b><br>
+
+Wherever we want to call a function we put the name og the function followed y parenthesis as follwe<br>
+
+function_name(arg1,arg2) #function call<br>
+
+<b>Function definition</b><br>
+
+the part containing  the exact set of instructions which are executed during the function call<br>
+
+<hr>
+
+def greet(name):<br>
+    print("Good Day "+ name)<br>
+<br>
+greet("keishan")<br>
+<hr>
+def sum1(mark1):<br>
+    sum=(((mark1[0]+mark1[1]+mark1[2]+mark1[3])/400)*100)<br>
+    return(sum)<br>
+<br>
+mark3=[98,78,99,44] <br>
+parentage=sum1(mark3)<br>
+print(parentage)<br>
+<br>
+mark2=[98,44,55,77] <br>
+parentage=sum1(mark2)<br>
+print(parentage)<br>
+
+<b>With out function</b><br>
+mark1=[98,78,99,44]<br>
+parcentage=((sum(mark1)/400)*100)<br>
+print(parcentage)<br>
+
+
+<i>
+<b>Function type in python</b><br>
+<b>Built-in Functions</b> :- Already present in python like:- len(),print(),type(), range()<br>
+<b>User Defined Functions</b> :- Defined by the user<br>
+</i>
+
+
+<hr>
+<b>Redursion:-</b><br>
+When a function calls itself repeatedly.<br>
+factorial(n)=n*factorial(n-1)<br>
+
+recursion <br>
+ n!=1*2*3*...*n<br>
+<br>
+def fectorial(num):<br>
+    if num==0:<br>
+        return 1<br>
+    else:<br>
+        return (num*fectorial(num-1))<br>
+    <br>
+num =int(input())<br>
+i=fectorial(num)<br>
+print(i)<br>
+
+# Filo i/0
