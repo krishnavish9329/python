@@ -579,4 +579,83 @@ num =int(input())<br>
 i=fectorial(num)<br>
 print(i)<br>
 
-# Filo i/0
+# Filo i/o  
+## chapter 9
+
+File Input/Outpt<br>
+
+<i>Python can be used to perform operations on a file (read & write data)</i><br>
+
+<b>Type of all files</b><br>
+1 Text Files : .txt, . docx, .log etc<br>
+2 binary Files : .mp4,.mov, .png, .jpeg etc.<br>
+
+
+<b>Open, Read & close File </b><br>
+we have to open a file before reading or writing.<br>
+
+<i><b>
+f= open("file_name", "mode")<br><br>
+
+file_name = sample.txt, demo.docx<br>
+
+mode = r : read mode,  w: weite mode<br>
+
+data = f.read()<br>
+f.close()<br>
+</b></i>
+
+<br>
+
+f=open("this.txt","r")  #read the file <br>
+hi=f.read() #reade all date of file<br>
+print(hi)<br>
+print(type(hi))<br>
+f.close()<br>
+
+<i><b>
+<br>
+r : open for reading (default)<br>
+x : create a new file and open it for writing <br>
+a : open for writing, appending to the end of the file if it exists <br>
+b : binary mode <br>
+w : open for writing , trucating the file first <br>
+t : text mode (default) <br>
++ : open  disk file for updating(reading and writing) <br>
+
+<u>node: if you open binary file so write wb,rb,ab in open file mode</u><br>
+</b></i>
+
+<b> Reading a file </b><br>
+data = f.read() # reads entire file<br>
+data = f.readline()  # reads one line at a time<br>
+
+<hr>
+
+f=open("this.txt","r")  #read the file using readline <br>
+hi=f.readline() <br>
+print(hi) <br>
+f.close() <br>
+
+
+<b>write to a file</b></br>
+
+
+f=open("this.txt","w") #write the file but before the write ,all data is cleare  <br>
+f.write("hello krishna") # overwrite the entire data<br>
+f.close() <br>
+
+<b>append a file </b><br>
+
+<b><i> file i/o with syntax </i></n> <br>
+
+
+with open("this.txt","a")as f: <br>
+   f.write("\n hello sangam") <br>
+   f.write("i am genious") <br>
+
+<br>
+
+
+
+
