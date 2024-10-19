@@ -621,7 +621,7 @@ a : open for writing, appending to the end of the file if it exists <br>
 b : binary mode <br>
 w : open for writing , trucating the file first <br>
 t : text mode (default) <br>
-+ : open  disk file for updating(reading and writing) <br>
+" + " : open  disk file for updating(reading and writing) <br>
 
 <u>node: if you open binary file so write wb,rb,ab in open file mode</u><br>
 </b></i>
