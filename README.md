@@ -586,6 +586,9 @@ File Input/Outpt<br>
 
 <i>Python can be used to perform operations on a file (read & write data)</i><br>
 
+<b>The random Access memory is volatile all its contents are lost once the program termintes in order to persist the data forever, we use File</b>
+<br>
+
 <b>Type of all files</b><br>
 1 Text Files : .txt, . docx, .log etc<br>
 2 binary Files : .mp4,.mov, .png, .jpeg etc.<br>
@@ -658,4 +661,424 @@ with open("this.txt","a")as f: <br>
 
 
 
+
+# OOPs
+## chapter 10
+
+To  map with real worls scenarios,  we started using Object in code<br>
+This is called <i>OBJECCT ORIENTED PROGRAMMING</i> <br>
+
+<i>
+<b>
+Class & Object in python </b></i>
+
+Class is a blueprint for creating object<br>
+<i>
+#creating class<br>
+class Student:<br>
+    name="kk"<br>
+<br>
+#creating object (instance)<br>
+<br>
+s1=Student()<br>
+print(s1.name)<br>
+</i>
+<br>
+
+
+<b>Class</b><br>
+
+A class is a user defined blueprint or prototype from which object are created. it represent the set of proparties and methods that are common to all object of one type.<br>
+
+The syntax of a class look like this<br>
+class Employee:<br>
+    #methods<br>
+
+<b>Object</b><br>
+it is a basic unite of Object Oriented programming and represents reat life entities<br>
+<br>
+An object is an instantiation of a class. when class is defined a template (info) is defined. memory is allocated only after object instantiation.<br>
+
+<b>__info__ function (constrator)</b><br>
+All classes have a function called __info__(), which is always executed when the Object is being  intiated<br>
+
+<i>
+class Student:<br>
+     #parameterized constructor<br>
+    def __init__(self,fullName):<br>
+        print("hello am constructor")<br>
+        print(self)<br>
+        self.name=fullName<br>
+<br>
+s1= Student("krishna")<br>
+print(s1.name)<br>
+</i>
+
+the <b>self</b> perameter is a refernce to the current instance of the class, and is used access the veriables that belogs to the class.<br>
+
+<b>Default constructor</b>
+<i>
+class Student:<br>
+    def __init_subclass__(cls) -> None:<br>
+        pass<br>
+</i>
+
+
+<b>Methods</b><br>
+
+Methods are functions that belong to Objects.<br>
+
+<i>
+#creating class<br>
+class Student:<br>
+    name="anonymous"<br>
+    #parameterized constructor<br>
+    def __init__(self,fullName):<br>
+        print("hello am constructor")<br>
+        print(self)<br>
+        self.name=fullName<br>
+
+#creating object<br>
+s1= Student("krishna")<br>
+print(s1.name)<br>
+
+
+<i>
+
+#prectice 1
+
+class student:<br>
+    def __init__(self,name,subject1,subject2,subject3):<br>
+        self.name = name<br>
+        self.subject1 = subject1<br>
+        self.subject2 = subject2<br>
+        self.subject3 = subject3<br>
+        print("ok")<br>
+    def avg(self):<br>
+        return ((self.subject1+self.subject2+self.subject3)/3)<br>
+krishna = student("krishna",96,85,75)<br>
+print(krishna.avg())<br>
+</i>
+
+<b>Static Methods</b><br>
+
+Methods that don't use the self parameter (work at class level)
+
+<i>
+#prectice 1<br>
+class student:<br>
+    #Static methods<br>
+    @staticmethod<br>
+    def hello():<br>
+        print("hello everone ")<br>
+    def __init__(self,name,mark):<br>
+        self.name = name<br>
+        self.mark = mark<br>
+        print("ok")<br>
+    def avg(self):<br>
+        sum =0<br>
+        for i in self.mark:<br>
+            sum += i<br>
+        return ((sum)/3)<br>
+    <br>
+krishna = student("krishna",[96,85,75])<br>
+<br>
+print(krishna.avg())<br>
+krishna.hello()<br>
+</i>
+
+<br>
+
+Decorator allow us to wrap another functon i order to entend the behavoiur of the wrapped function , without permanently modifying it.
+
+<br>
+
+<b> Abstraction </b><br>
+Hinding the implementation details of a class  and showing the essential features to the user. <br>
+<hr>
+<b> Ecapsulation </b><br>
+wrapping data and functions into a single unite (object)<br>
+<hr>
+
+## chapter 10 -> programing2.py
+
+<b>del Keyword</b><br>
+
+<i>
+del s1.name<br>
+del s1 <br>
+</i>
+
+
+
+<b>private(linke) Attributes & methods </b><br>
+
+Conceptual impplementation in pythan<br>
+Private attributes & methods are meant to be used only within the class and are not accessible from outside the class.<br>
+
+<b>
+<i>
+class Account:<br>
+        self.acc_no=acc_no<br>
+    def __init__(self, acc_no, acc_pass):<br>
+    def reset_pass(self, acc_new_pass):<br>
+        self.__acc_pass=acc_pass #private Attribute(__(name of veriable))<br>
+        self.__acc_pass=acc_new_pass<br>
+        print(self.__acc_pass)<br>
+        print("hello  name  enter the details")<br>
+    def __hello(self):<br>
+<br>
+    def welcome(self):<br>
+        self.__hello()    <br>
+<br>
+a1.welcome()<br>
+a1=Account(1234,"abc")<br>
+a1.reset_pass(123)<br>
+print(a1.acc_no)<br>
+a1.reset_pass('a')<br>
+a1.reset_pass('a')<br>
+
+</i>
+</b>
+<br>
+
+
+<b>Inheritance</b><br>
+
+When one class(child/ drived ) derives the properties & methods of another class ( parent / base).<br>
+
+<i>
+<b>
+class Car:<br>
+    ......<br>
+
+class ToyotaCar( Car ):<br>
+    ......<br>
+
+<br>
+
+
+Example<br>
+
+
+
+class Car:<br>
+    color="black"<br>
+    @staticmethod<br>
+    def start():<br>
+        print("car started")<br>
+    @staticmethod<br>
+    def stop():<br>
+        print("car stopped :")    <br>
+class ToyptaCar(Car):<br>
+    def __init__(self,name):<br>
+        self.name = name<br>
+car1 = ToyptaCar("fortuner")<br>
+car2 = ToyptaCar("prius")<br>
+<br>
+print(car1.name)<br>
+print(car1.color)<br>
+print(car1.start())<br>
+
+
+</b>
+</i>
+
+
+
+<b> Type of interitance </b><br>
+
+single interitance<br>
+multi-level interitance<br>
+multiple interitance<br>
+
+
+
+
+
+
+<b>multi-level interitance</b><br>
+<i>
+<b>
+
+
+class Car:<br>
+    @staticmethod<br>
+    def start():<br>
+        print("car started")<br>
+    @staticmethod<br>
+    def stop():<br>
+        print("car stopped :")    <br>
+class ToyptaCar(Car):<br>
+    def __init__(self,barnd):<br>
+        self.band = barnd<br>
+    <br>
+class Fortuner(ToyptaCar):<br>
+    def __init__(self,type):<br>
+        self.type=type<br>
+<br>
+car1 = Fortuner("EV")<br>
+<br>
+<br>
+print(car1.type)<br>
+print(car1.start())<br>
+</b>
+</i>
+
+
+
+<b>multiple inheritance</b><br>
+
+
+<b>
+<i>
+
+class A:<br>
+    varA ="welcome to class A"<br>
+<br>
+<br>
+class B:<br>
+    varB ="welcome to class B"<br>
+<br>
+class C (A,B):<br>
+    varC ="welcome to class C"<br>
+<br>
+c1=C()<br>
+<br>
+print(c1.varA)<br>
+print(c1.varB)<br>
+print(c1.varC)<br>
+
+</i>
+</b>
+
+
+<b>Super method</b><br>
+
+
+<b><i>
+
+
+#super mrthod<br>
+<br>
+class Car:<br>
+    def __init__(self,type):<br>
+        self.type=type<br>
+    @staticmethod<br>
+    def start():<br>
+        print("car started")<br>
+    @staticmethod<br>
+    def stop():<br>
+        print("car stopped :")    <br>
+class ToyptaCar(Car):<br>
+    def __init__(self,name,type):<br>
+        super().__init__(type)<br>
+        super().stop()<br>
+        self.name = name<br>
+<br>
+car1 = ToyptaCar("fortuner","EV")<br>
+print(car1.name)<br>
+print(car1.type)<br>
+print(car1.start())<br>
+
+</i></b>
+
+
+
+<b>class method</b><br>
+
+A Class mthod is bound to the class & receive the class as an implicit first argument<br>
+Node - static can't access or modify class state & generally for utility.<br>
+
+<i>
+class student:<br>
+    @classMethod<br>
+    def college(cls):<br>
+        pass<br>
+</i>
+
+
+<b>Example</b><br>
+
+<i>
+<b>
+#classMethod<br>
+
+class person:<br>
+    name="anonymous"<br>
+    # def chnageName(self,name):<br>
+    #     # self.name=name<br>
+    #     person.name=name #1st method of class method<br>
+    #     self.__class__.name=name #2st method of class method<br>
+<br>
+    @classmethod<br>
+    def chnageName(cls,name):<br>
+        cls.name=name<br>
+<br>
+p1=person()<br>
+p1.chnageName("krishna")<br>
+<br>
+print(p1.name)<br>
+print(person.name)<br>
+</b>
+</i>
+
+<b>propety method</b><br>
+
+We use @property decorator on any method in the class to use the method as a property<br>
+
+<i><b>
+
+#propety method<br>
+<br>
+class student:<br>
+    def __init__(self,phy,chem,math):<br>
+        self.phy=phy<br>
+        self.chem = chem<br>
+        self.math=math<br>
+    @property<br>
+    def percentage(self):<br>
+        return str((self.phy+ self.chem +self.math)/3)+"%"<br>
+stu1= student(89,97,99)<br>
+print(stu1.percentage)<br>
+stu1.phy=86<br>
+print(stu1.phy)<br>
+print(stu1.percentage)<br>
+<br>
+</b></i>
+
+
+
+<b>polymorphism<b> operator overloading<br>
+
+when the same operoter is allowed to have different meaning according to the context.<br>
+
+<b>Operatore & Dunder Function</b>
+
+a+b #addition        a.__add__(b)<br>
+a-b #subtraction     a.__sub__(b)<br>
+a*b #multiplication  a.__mul__(b)<br>
+a/b #division        a.__truediv__(b)<br>
+a%b #addition        a.__mod__(b)<br>
+
+
+<b>
+<i>
+
+#polymorphism<br>
+<br>
+class str:<br>
+    def __init__(self,name):<br>
+        self.name=name<br>
+<br>
+    def __add__(self,s2):<br>
+        return self.name+" "+s2.name<br>
+s1=str("krishna")<br>
+s2=str("vishwakarma")<br>
+s3=s1+s2<br>
+print(s3)<br>
+
+we can make more method <br>
+</i>
+</b>
 
